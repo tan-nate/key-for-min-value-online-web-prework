@@ -1,12 +1,3 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
-
-require 'pry'
-
-hash = {}
-
-hash = {:table => 85, :chair => 25, :mattress => 450, :hammer => 2, :laser => 100, :desk => 80}
-
 def values(hash)
   hash.collect do |key, value|
     value
@@ -47,5 +38,3 @@ def key_for_min_value(hash)
     keys[lowest_value_index]
   end
 end
-
-binding.pry
